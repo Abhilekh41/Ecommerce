@@ -1,9 +1,12 @@
  <?xml version="1.0" encoding="UTF-8" ?>
  <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-
-<c:set var="contextRoot" value = "${pageContext.request.contextPath}"/>
+ <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+ <c:set var="contextRoot" value = "${pageContext.request.contextPath}"/>
+ <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>	
+	
+	<spring:url var="css" value="resources/css/" />
+	<spring:url var="js" value = "resources/js" />
+	<spring:url var="images" value = "resources/images" />
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,9 +19,9 @@
     <title>Shop Homepage Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="${css}/bootstrap.css" rel="stylesheet">
 
-    <link href="css/shop-homepage.css" rel="stylesheet">
+    <link href="${css}/shop-homepage.css" rel="stylesheet">
 
 </head>
 
@@ -243,8 +246,8 @@
     <!-- /.container -->
 
     <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <script src="${js}/jquery-1.10.2.js"></script>
+    <script src="${js}/bootstrap.js"></script>
 
 </body>
 
