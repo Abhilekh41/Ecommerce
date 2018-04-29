@@ -12,6 +12,8 @@
    >
    
    <context:component-scan base-package="com.baja.ecommercefrontend.controller"/>	
+   <context:component-scan base-package="com.baja.ecommercebackend.daoimpl"/>	
+   
    
    <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
    <property name="prefix" value="/WEB-INF/views/"/>

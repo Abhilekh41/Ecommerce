@@ -1,6 +1,6 @@
 
 <?xml version="1.0" encoding="UTF-8" ?>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <c:set var="contextRoot" value="${pageContext.request.contextPath}" />
@@ -23,11 +23,13 @@
 <link href="${css}/bootstrap.css" rel="stylesheet">
 <link href="${css}/shop-homepage.css" rel="stylesheet">
 <link href="${css}/myapp.css" rel="stylesheet">
+
+<link href="${css}/bootstrap-custom-theme.css" rel="stylesheet">
+
 <script>
 	window.menu = '${title}';
 </script>
-<!-- Custom theme -->
-<!-- <link href="${css}/bootstrap-custom-theme.css" rel="stylesheet"> -->
+
 </head>
 
 <body>
@@ -55,7 +57,7 @@
 		<script src="${js}/bootstrap.js"></script>
 
 		<!-- This js file is not responding -->
-	<!--  	<script src="${js}/myapp.js"></script>-->
+		<script src="${js}/myapp.js"></script>
 	</div>
 </body>
 

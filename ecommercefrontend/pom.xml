@@ -13,6 +13,13 @@
 		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 	<dependencies>
+
+		<!-- connecting backend to front end -->
+		<dependency>
+			<groupId>com.baja</groupId>
+			<artifactId>ecommercebackend</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 		<!-- JUNIT Dependency -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -36,7 +43,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
-		
+
 		<!-- JSTL -->
 		<dependency>
 			<groupId>jstl</groupId>
