@@ -29,7 +29,7 @@ public class PageController {
 	public ModelAndView contact()
 	{
 		ModelAndView mv = new ModelAndView("page");
-		mv.addObject("title", "contact");
+		mv.addObject("title", "Contact");
 		mv.addObject("userClickContact",true);
 		return mv;
 	}
