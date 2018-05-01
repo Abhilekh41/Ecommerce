@@ -49,10 +49,13 @@
 			<c:if test="${userClickContact == true}">
 				<%@include file="./contact.jsp"%>
 			</c:if>
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
+				<%@include file="./listProducts.jsp"%>
+			</c:if>	
 		</div>
 		<!-- Footer -->
 		<%@include file="./shared/footer.jsp"%>
-		<!-- JavaScript -->
+		<!-- JavaScript -->	
 		<script src="${js}/jquery-1.10.2.js"></script>
 		<script src="${js}/bootstrap.js"></script>
 

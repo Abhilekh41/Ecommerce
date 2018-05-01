@@ -1,15 +1,27 @@
 $(function()
 		{
-	switch(menu)
-	{
-	case 'About us':
+	switch (menu) {
+
+	case 'About Us':
 		$('#about').addClass('active');
 		break;
-	case 'Contact':
+	case 'Contact Us':
 		$('#contact').addClass('active');
 		break;
+	case 'All Products':
+		$('#listProducts').addClass('active');
+		break;
+	case 'Product Management':
+		$('#manageProduct').addClass('active');
+		break;
+	case 'Shopping Cart':
+		$('#userModel').addClass('active');
+		break;		
 	default:
-		$('#home').addClass('active');
+		if (menu == "Home")
+			break;
+		$('#listProducts').addClass('active');
+		$('#a_' + menu).addClass('active');
 		break;
 	}
 })

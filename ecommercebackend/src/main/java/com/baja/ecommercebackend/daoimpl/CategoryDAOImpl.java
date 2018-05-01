@@ -38,8 +38,19 @@ public class CategoryDAOImpl implements CategoryDAO {
 	
 	@Override
 	public List<Category> list() {
-		// TODO Auto-generated method stub
 		return categoryList;
 	}
 
-}
+	@Override
+	public Category get(Integer id) {
+		//enhanced for loop
+		for (Category category : categoryList) {
+			if(category.getId()==id)
+			{
+				return category;
+			}
+		}
+		return null;
+	}
+
+}	 
